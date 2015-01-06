@@ -1,0 +1,8 @@
+
+    <resources>
+        <string-array name="sections">
+            <item>天才出世</item>
+            <item>旭日东升</item>
+            <item>番棋之王</item>
+        </string-array>
+    </resources>

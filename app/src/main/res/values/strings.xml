@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">昭和棋圣</string>
+    <string name="action_settings">Settings</string>
+    <string name="appTitle">昭和棋圣吴清源</string>
+	<string name="appDesc">This is a cool GUI demo</string>
+	
+	<string name="bio">吴清源介绍</string>
+	<string name="byPlayer">按棋手查看棋谱</string>
+	<string name="byDate">按时间查看棋谱</string>
+	
+	<string name="black">黑</string>
+    <string name="white">白</string>
+	
+    <string name="backBtn">后</string>
+    <string name="forwardBtn">前</string>
+    <string name="gotoBtn">Go</string>
+    <string name="returnBtn">返回</string>
+    
+</resources>

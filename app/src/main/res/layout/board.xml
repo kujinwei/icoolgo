@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/qipuTitle" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+    
+    <com.icool.go.ui.BoardView
+        android:id="@+id/boardView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/board"/>
+
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="21.0px"
+        android:layout_marginBottom="10.0px" 
+        android:layout_marginLeft="20.0px"
+        android:layout_marginRight="20.0px"
+        android:paddingBottom="4dip"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:paddingTop="1dip" >
+
+        <ImageView
+            android:id="@+id/backImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+        	android:paddingBottom="3dp"
+        	android:paddingRight="16dp"
+        	android:paddingLeft="10dp"
+            android:contentDescription="back"
+            android:src="@drawable/icon_backone" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/goImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+        	android:paddingBottom="3dp"
+        	android:paddingRight="16dp"
+        	android:paddingLeft="10dp"
+            android:contentDescription="go"
+            android:src="@drawable/icon_nextone" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/nextfastImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+        	android:paddingBottom="3dp"
+        	android:paddingRight="16dp"
+        	android:paddingLeft="10dp"
+            android:contentDescription="nextfast"
+            android:src="@drawable/icon_nextfast" >
+        </ImageView>
+        
+        <ImageView
+            android:id="@+id/stopImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+        	android:paddingBottom="3dp"
+        	android:paddingRight="16dp"
+        	android:paddingLeft="10dp"
+            android:contentDescription="nextfast"
+            android:src="@drawable/stopbtn" >
+        </ImageView>
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

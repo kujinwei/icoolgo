@@ -92,7 +92,7 @@ public class GoApplication extends Application {
 			db = new QipuMgr(context , DB_NAME) ;
 			
 		} catch (Exception e) {
-			
+			Log.e(CLASS_NAME , "onCreate failed" , e) ;
 		}
 		
 		instance = this ;
@@ -119,6 +119,7 @@ public class GoApplication extends Application {
 		myOutput.flush();
 		myOutput.close();
 		myInput.close();
+        Log.i(CLASS_NAME , "Copied the database db file successfully!") ;
 	}
 	
 	public void init() {

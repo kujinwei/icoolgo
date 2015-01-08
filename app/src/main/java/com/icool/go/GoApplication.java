@@ -1,6 +1,6 @@
 package com.icool.go;
 
-
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,7 +22,8 @@ public class GoApplication extends Application {
 	protected static GoApplication instance = null ;
 	
 	public final static String CLASS_NAME = "GoApplication";
-	public static String DB_PATH = "/data/data/com.icool.go.resources/databases/" ;
+//	public static String DB_PATH = "/data/data/com.icool.go.resources/databases/" ;
+    public static String DB_PATH = "/data/data/com.icool.go.icoolgo/databases/" ;
 	public static String DB_NAME = "qipu.db";
 
 	Context context ;	
@@ -108,6 +109,12 @@ public class GoApplication extends Application {
 		// Path to the just created empty db
 		String outFileName = DB_PATH + DB_NAME;
 		// Open the empty db as the output stream
+        File f = new File(DB_PATH) ;
+        if (!f.exists()) {
+            f.mkdirs() ;
+        }else{
+            Log.i(CLASS_NAME , "path exist!") ;
+        }
 		OutputStream myOutput = new FileOutputStream(outFileName);
 		
 		byte[] buffer = new byte[1024];
